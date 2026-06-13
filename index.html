@@ -294,30 +294,6 @@ footer{background:#060F1E;padding:44px 48px}
   </div>
 </footer>
 
-<script>
-function sendMail(e) {
-  e.preventDefault();
-  var form = e.target.closest('.ct-form');
-  var inputs = form.querySelectorAll('input, select, textarea');
-  var name = inputs[0].value || '（未入力）';
-  var company = inputs[1].value || '（未入力）';
-  var email = inputs[2].value || '（未入力）';
-  var type = inputs[3].value || '（未入力）';
-  var message = inputs[4].value || '（未入力）';
-  if (!inputs[0].value || !inputs[2].value || !inputs[4].value) {
-    alert('お名前、メールアドレス、メッセージは必須です。');
-    return;
-  }
-  var body = encodeURIComponent(
-    'お名前：' + name + '\n' +
-    '会社名・クリニック名：' + company + '\n' +
-    '返信先メール：' + email + '\n' +
-    'お問い合わせ種別：' + type + '\n\n' +
-    'メッセージ：\n' + message
-  );
-  var subject = encodeURIComponent('[iSELLab お問い合わせ] ' + type);
-  window.location.href = 'mailto:info@isellab.co.jp?subject=' + subject + '&body=' + body;
-}
-</script>
+
 </body>
 </html>
