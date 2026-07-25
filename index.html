@@ -123,17 +123,17 @@ section{padding:100px 48px}
 .fg-submit:disabled{opacity:0.6;cursor:not-allowed;transform:none}
 .fg-req{color:#f87171;margin-left:2px}
 
-footer{background:#060F1E;padding:44px 48px}
+footer{background:#FFFFFF;padding:44px 48px;border-top:1px solid rgba(10,37,64,0.08)}
 .ft-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
 .ft-logo{display:flex;align-items:center;text-decoration:none}.ft-logo img{height:32px;width:auto}
-.ft-logo span{color:var(--sky400)}
+.ft-logo span{color:var(--accent)}
 .ft-links{display:flex;gap:24px;list-style:none}
-.ft-links a{font-size:12px;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s}
-.ft-links a:hover{color:rgba(255,255,255,0.65)}
-.ft-copy{font-size:12px;color:rgba(255,255,255,0.2);width:100%;text-align:center;margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06)}
+.ft-links a{font-size:12px;color:var(--g500);text-decoration:none;transition:color 0.2s}
+.ft-links a:hover{color:var(--navy)}
+.ft-copy{font-size:12px;color:var(--g400);width:100%;text-align:center;margin-top:24px;padding-top:20px;border-top:1px solid rgba(10,37,64,0.06)}
 .legal{display:flex;gap:20px;justify-content:center;margin-top:8px}
-.legal a{font-size:11px;color:rgba(255,255,255,0.2);text-decoration:none}
-.legal a:hover{color:rgba(255,255,255,0.45)}
+.legal a{font-size:11px;color:var(--g400);text-decoration:none}
+.legal a:hover{color:var(--navy)}
 
 /* ── Hamburger menu ── */
 .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;border:none;background:none}
@@ -228,7 +228,7 @@ footer{background:#060F1E;padding:44px 48px}
   <div class="hero-content">
     <div>
       <div class="hero-tag">Healthcare Technology Company</div>
-      <h1>科学と医学的な知見で、<br>子どもの成長を<br><em>サポートする</em>。</h1>
+      <h1>科学と医療知見で、<br>子どもの成長を<br><em>サポートする</em>。</h1>
       <p class="hero-desc">iSELLabは、採血データの記録・可視化と医師の診療をサポートするプロトコルを通じて、成長期の子どもたちをサポートするヘルスケアテクノロジー企業です。</p>
       <div class="hero-btns">
         <a href="#service" class="btn-p">事業内容を見る</a>
@@ -462,15 +462,18 @@ footer{background:#060F1E;padding:44px 48px}
   });
 })();
 </script>
+<script>
+(function(){
+  var btn2 = document.getElementById('hamburger');
   var menu = document.getElementById('navMobile');
-  if(!btn || !menu) return;
-  btn.addEventListener('click', function(){
-    btn.classList.toggle('open');
+  if(!btn2 || !menu) return;
+  btn2.addEventListener('click', function(){
+    btn2.classList.toggle('open');
     menu.classList.toggle('open');
   });
   document.querySelectorAll('.mobile-link').forEach(function(a){
     a.addEventListener('click', function(){
-      btn.classList.remove('open');
+      btn2.classList.remove('open');
       menu.classList.remove('open');
     });
   });
