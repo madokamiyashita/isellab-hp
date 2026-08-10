@@ -5,37 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>利用規約 | iSELLab</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--accent:#0EA5E9;--navy:#0A2540;--g500:#64748B;--g600:#475569;--g800:#1E293B;--sky100:#E0F2FE;--off:#F7FAFB}
+:root{--navy:#0A2540;--g500:#64748B;--g700:#334155;--g900:#0F172A;--line:#E2E8F0}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Noto Sans JP',sans-serif;background:#fff;color:var(--g800);line-height:1.8}
-nav{background:#fff;border-bottom:1px solid rgba(14,165,233,0.1);padding:0 48px;height:64px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--accent);text-decoration:none}
+body{font-family:'Noto Sans JP',sans-serif;background:#fff;color:var(--g900);line-height:1.9}
+nav{background:#fff;border-bottom:1px solid var(--line);padding:0 48px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--navy);text-decoration:none}
 .nav-back{font-size:13px;color:var(--g500);text-decoration:none;transition:color 0.2s}
-.nav-back:hover{color:var(--accent)}
-.wrap{max-width:760px;margin:0 auto;padding:72px 24px 100px}
-.page-label{font-size:11px;font-weight:500;color:var(--accent);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:16px}
-.page-title{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:400;color:var(--navy);margin-bottom:12px}
-.page-date{font-size:12px;color:var(--g500);margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--sky100)}
-.sec{margin-bottom:40px}
-.sec h2{font-size:16px;font-weight:500;color:var(--navy);margin-bottom:14px;padding-left:12px;border-left:3px solid var(--accent)}
-.sec p{font-size:14px;color:var(--g600);line-height:1.9;margin-bottom:12px;font-weight:300}
-.sec ul{padding-left:20px;display:flex;flex-direction:column;gap:8px}
-.sec ul li{font-size:14px;color:var(--g600);line-height:1.8;font-weight:300}
-.info-box{background:var(--off);border-radius:12px;padding:24px 28px;margin-top:8px}
-.info-row{display:flex;gap:20px;padding:10px 0;border-bottom:1px solid var(--sky100);font-size:14px}
-.info-row:last-child{border-bottom:none}
-.info-label{width:120px;color:var(--g500);flex-shrink:0;font-size:13px}
-.info-val{color:var(--g600);font-weight:300}
-footer{background:#FFFFFF;padding:32px 48px;text-align:center;border-top:1px solid rgba(10,37,64,0.08)}
-footer p{font-size:12px;color:#64748B}
-footer a{color:#64748B;text-decoration:none;margin:0 12px}
+.nav-back:hover{color:var(--navy)}
+.wrap{max-width:760px;margin:0 auto;padding:64px 24px 96px}
+.page-title{font-size:32px;font-weight:700;color:var(--g900);margin-bottom:12px}
+.page-date{font-size:13px;color:var(--g500);margin-bottom:40px;padding-bottom:28px;border-bottom:1px solid var(--g900)}
+.lead{font-size:14px;color:var(--g700);line-height:2;margin-bottom:8px;text-align:justify}
+.sec{margin-top:36px}
+.sec h2{font-size:16px;font-weight:700;color:var(--g900);margin-bottom:14px}
+.sec p{font-size:14px;color:var(--g700);line-height:2;margin-bottom:12px;text-align:justify}
+.sec ul{list-style:none;padding-left:4px;margin:4px 0 12px}
+.sec ul li{font-size:14px;color:var(--g700);line-height:1.9;margin-bottom:6px;padding-left:16px;position:relative}
+.sec ul li::before{content:"・";position:absolute;left:0}
+.info-box{border:1px solid var(--line);border-radius:8px;padding:20px 24px;margin-top:8px}
+.info-row{display:flex;gap:16px;padding:8px 0;font-size:14px}
+.info-label{width:96px;color:var(--g500);flex-shrink:0}
+.info-val{color:var(--g700)}
+.end{text-align:right;font-size:13px;color:var(--g500);margin-top:40px}
+footer{background:#fff;padding:32px 48px;text-align:center;border-top:1px solid var(--line)}
+footer p{font-size:12px;color:var(--g500)}
+footer a{color:var(--g500);text-decoration:none;margin:0 12px}
 footer a:hover{color:var(--navy)}
 @media(max-width:600px){
   nav{padding:0 20px}
-  .wrap{padding:48px 20px 80px}
-  .page-title{font-size:28px}
+  .wrap{padding:44px 20px 72px}
+  .page-title{font-size:26px}
+  .info-row{flex-direction:column;gap:2px}
+  .info-label{width:auto}
   footer{padding:24px 20px}
 }
 </style>
@@ -47,13 +50,10 @@ footer a:hover{color:var(--navy)}
 </nav>
 
 <div class="wrap">
-  <div class="page-label">Legal</div>
   <h1 class="page-title">利用規約</h1>
   <div class="page-date">制定日：2026年1月　　最終更新日：2026年7月</div>
 
-  <div class="sec">
-    <p>本利用規約（以下「本規約」）は、株式会社iSELLab（以下「当社」）が提供するウェブサイトおよびサービス（以下「本サービス」）の利用条件を定めるものです。本サービスをご利用いただく際は、本規約に同意いただいたものとみなします。</p>
-  </div>
+  <p class="lead">本利用規約（以下「本規約」）は、株式会社iSELLab（以下「当社」）が提供するウェブサイトおよびサービス（以下「本サービス」）の利用条件を定めるものです。本サービスをご利用いただく際は、本規約に同意いただいたものとみなします。</p>
 
   <div class="sec">
     <h2>第1条　適用範囲</h2>
@@ -61,13 +61,26 @@ footer a:hover{color:var(--navy)}
   </div>
 
   <div class="sec">
-    <h2>第2条　サービスの内容</h2>
+    <h2>第2条　サービスの内容と位置づけ</h2>
     <p>当社は、GrowthLab成長サポートプログラムに関する情報提供、お問い合わせ受付、およびクリニック向け導入支援サービスを提供します。</p>
-    <p>本サービスは医療行為ではなく、診断・治療・処方を行うものではありません。医師による診療はすべて提携クリニックの医師が担当します。</p>
+    <p>当社が提供するのは、採血データの記録・可視化ツール、成長サポートプログラムの設計・管理、およびサプリメント等の情報提供です。本サービスは医療行為ではなく、診断・治療・処方を行うものではありません。医師による診療・判断はすべて提携クリニックの医師が独立して担当します。</p>
+    <p>当社と提携クリニックはそれぞれ独立した事業者であり、クリニックにおける診療・医療行為の内容および結果について、当社は一切の責任を負いません。</p>
   </div>
 
   <div class="sec">
-    <h2>第3条　禁止事項</h2>
+    <h2>第3条　未成年者の利用</h2>
+    <p>GrowthLab成長サポートプログラムは6〜16歳の未成年者を対象としたサービスです。未成年者が本サービスを利用する場合は、親権者または法定代理人（以下「保護者」）の同意を得たうえで利用するものとします。</p>
+    <p>保護者は、未成年者に代わって本規約に同意し、未成年者の本サービス利用について責任を負うものとします。プログラムへの申込み・契約手続きは、保護者が行うものとします。</p>
+  </div>
+
+  <div class="sec">
+    <h2>第4条　効果の不保証</h2>
+    <p>本サービスおよびGrowthLab成長サポートプログラムは、身長の伸長その他特定の効果を保証するものではありません。成長には個人差があり、遺伝・栄養・睡眠・運動・健康状態等の複合的な要因が影響します。</p>
+    <p>当社は、プログラムの利用によって特定の結果が得られることを約束・保証しません。</p>
+  </div>
+
+  <div class="sec">
+    <h2>第5条　禁止事項</h2>
     <p>ユーザーは、本サービスの利用にあたり、以下の行為を行ってはなりません。</p>
     <ul>
       <li>法令または公序良俗に反する行為</li>
@@ -79,47 +92,60 @@ footer a:hover{color:var(--navy)}
   </div>
 
   <div class="sec">
-    <h2>第4条　知的財産権</h2>
-    <p>本サービス上のコンテンツ（文章・画像・ロゴ・デザイン等）に関する知的財産権は、当社または正当な権利者に帰属します。ユーザーは、当社の事前の書面による承諾なしに、これらを複製・転用・配布することはできません。</p>
+    <h2>第6条　知的財産権</h2>
+    <p>本サービス上のコンテンツ（文章・画像・ロゴ・デザイン・プログラム設計等）に関する知的財産権は、当社または正当な権利者に帰属します。ユーザーは、当社の事前の書面による承諾なしに、これらを複製・転用・配布することはできません。</p>
   </div>
 
   <div class="sec">
-    <h2>第5条　免責事項</h2>
+    <h2>第7条　個人情報の取り扱い</h2>
+    <p>本サービスの利用にあたり取得した個人情報は、当社が別途定める<a href="privacy.html" style="color:inherit;text-decoration:underline">プライバシーポリシー</a>に従って適切に取り扱います。</p>
+  </div>
+
+  <div class="sec">
+    <h2>第8条　免責事項</h2>
     <p>当社は、本サービスに関して以下の事項について責任を負いません。</p>
     <ul>
       <li>本サービス上の情報の正確性・完全性・最新性</li>
       <li>本サービスの利用により生じた損害（直接・間接を問わず）</li>
       <li>本サービスの停止・中断・終了により生じた損害</li>
-      <li>提携クリニックが提供する医療行為の結果</li>
+      <li>提携クリニックが提供する医療行為・診療の内容および結果</li>
+      <li>プログラム利用による成長・身長への効果</li>
     </ul>
     <p>本サービスで提供する情報は一般的な情報提供を目的とするものであり、医療上のアドバイスに代わるものではありません。</p>
   </div>
 
   <div class="sec">
-    <h2>第6条　サービスの変更・停止</h2>
+    <h2>第9条　サービスの変更・停止</h2>
     <p>当社は、ユーザーへの事前通知なく、本サービスの内容を変更または停止することがあります。これによりユーザーに生じた損害について、当社は責任を負いません。</p>
   </div>
 
   <div class="sec">
-    <h2>第7条　利用規約の変更</h2>
+    <h2>第10条　利用規約の変更</h2>
     <p>当社は、法令の改正やサービス内容の変更に応じて、本規約を変更することがあります。変更後の規約は、当ウェブサイトに掲載した時点で効力を生じるものとします。</p>
   </div>
 
   <div class="sec">
-    <h2>第8条　準拠法・管轄裁判所</h2>
+    <h2>第11条　残存条項</h2>
+    <p>本規約の終了後またはユーザーが本サービスの利用を終了した後も、第4条（効果の不保証）、第6条（知的財産権）、第7条（個人情報の取り扱い）、第8条（免責事項）、第12条（準拠法・管轄裁判所）その他性質上存続すべき条項は、なお効力を有するものとします。</p>
+  </div>
+
+  <div class="sec">
+    <h2>第12条　準拠法・管轄裁判所</h2>
     <p>本規約の解釈および適用は日本法に準拠します。本サービスに関して紛争が生じた場合は、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
   </div>
 
   <div class="sec">
-    <h2>第9条　お問い合わせ窓口</h2>
+    <h2>第13条　お問い合わせ窓口</h2>
     <p>本規約に関するお問い合わせは、以下までご連絡ください。</p>
     <div class="info-box">
-      <div class="info-row"><div class="info-label">事業者名</div><div class="info-val">株式会社iSELLab</div></div>
+      <div class="info-row"><div class="info-label">事業者名</div><div class="info-val">株式会社iSELLab（アイセルラボ）</div></div>
       <div class="info-row"><div class="info-label">代表者</div><div class="info-val">宮下 まどか</div></div>
       <div class="info-row"><div class="info-label">所在地</div><div class="info-val">〒104-0061 東京都中央区銀座1丁目12番4号 N&amp;E BLD.6F</div></div>
       <div class="info-row"><div class="info-label">メール</div><div class="info-val">info@isellab.co.jp</div></div>
     </div>
   </div>
+
+  <div class="end">以上</div>
 </div>
 
 <footer>
